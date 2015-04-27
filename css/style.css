@@ -425,3 +425,12 @@ td,
 th {
   padding: 0;
 }
+
+/* my code */
+
+body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;
+}
