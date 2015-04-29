@@ -430,23 +430,26 @@ th {
 /*-----------------!!!!!!!!!! my code !!!!!!!!!!!-----------------*/
 /*-----------------!!!!!!!!!! my code !!!!!!!!!!!-----------------*/
 
-html {
+html { /* Border-Box reset - apply a natural box layout model to all elements, but allowing components to change */
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-body {
-    background-color: LightGray;
+body { /* this is just a guide to see where and how everthing is categorized */
+    background-color: White;
 }
 div {
-    border: 1px solid Chocolate;
+    border: 1px solid transparent; /* if you keep the color "transparent" you wont see the border */
 }
 
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
+  position: fixed; /* the top white bar with links will stay put as you scroll down the page! */
+  width: 100%;
+  z-index: 9999; /* large zIndex value added to insure the nav stays on top of other elements now that it is fixed */
 }
 
 .top-navigation > .content {
@@ -480,13 +483,16 @@ div {
   font-weight: 500;
 }
 
+section .introduction {
+  display: block;
+}
+
 .introduction {
     background-image: url('../images/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover; /* is a good trick to get the image to fill a screen size that's bigger than the image. */
     height: 45.938rem;
-
 }
 
 .introduction h1 {
@@ -529,27 +535,47 @@ button:hover { /* to change the button color when you place your cursor over */
       cursor: pointer;
 }
 
-.cases h2 {
+.cases {
+    background-color: #fff;
+    overflow: hidden; /* stretches the white background further */
+    padding-bottom: 5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.75rem;
-    font-weight: 300;
-    margin: 7rem 0 3.125rem; /* you need to figure out this positioning in chrome dev tools */ 
-    text-align: center;  
-  }
-
-  .cases .devices {
-    width: 33.3333333%;
-    display: inline-block;
-    /* styles to assist with debugging */
-    border: 1px solid black;
-    box-sizing: border-box;
-    height: 4em;
-    display: flex; /* This forces everything to be in 1 row proportionally */
 }
 
-.cases h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 7.5rem 0 3.125rem;
     font-weight: 300;
-    text-align: center; 
+    text-align: center;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left; /* aligns all the cases back-to-back on the same row */
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    text-align: center;
+}
+
+.cases .content {
+  height: 28.3125rem;
+  border-bottom: 1px solid #eaebec;
+
+}
+
+ul {
+    list-style-type: none; /* removed the ugly bullets */
+}
+
+.devices img { /* specify margins in dev tools to center images */
+  margin-bottom: -0.15rem;
+  margin-left: 7rem;
 }
