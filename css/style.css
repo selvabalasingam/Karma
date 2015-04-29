@@ -450,6 +450,7 @@ div {
   position: fixed; /* the top white bar with links will stay put as you scroll down the page! */
   width: 100%;
   z-index: 9999; /* large zIndex value added to insure the nav stays on top of other elements now that it is fixed */
+  border-bottom: 1px solid #DDD; /* this adds a subtle border when you scroll across a white background*/
 }
 
 .top-navigation > .content {
@@ -576,3 +577,53 @@ ul {
   margin-bottom: -0.15rem;
   margin-left: 7rem;
 }
+
+/* FOOTER */
+h5 {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+  font-weight: 300;
+}
+
+.footer-bottom {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-color: #838994;
+  font-weight: 300;
+}
+
+.social hr { /* Styling for the line above "Join us on..." */
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 4rem;
+}
+
+.social .icons > li { /* styling the icons by adding a circle border */
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block; /* to have everything on the same line */
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+}
+
+.social .icons > li:hover { /* to have have the arrow change into a pointer when you move your mouse over the icon */
+  cursor: pointer;
+}
+.social .twitter { /* coloring each symbol */
+  color: #55acee;
+}
+.social .facebook { /* coloring each symbol */
+  color: #4c66a4;
+}
+.social .instagram { /* coloring each symbol */
+  color: #3f729b;
+}
+
