@@ -529,3 +529,27 @@ button:hover { /* to change the button color when you place your cursor over */
       cursor: pointer;
 }
 
+.cases h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 300;
+    margin: 7rem 0 3.125rem; /* you need to figure out this positioning in chrome dev tools */ 
+    text-align: center;  
+  }
+
+  .cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+    display: flex; /* This forces everything to be in 1 row proportionally */
+}
+
+.cases h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center; 
+}
