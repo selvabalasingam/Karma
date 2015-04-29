@@ -430,13 +430,18 @@ th {
 /*-----------------!!!!!!!!!! my code !!!!!!!!!!!-----------------*/
 /*-----------------!!!!!!!!!! my code !!!!!!!!!!!-----------------*/
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
     background-color: LightGray;
 }
 div {
     border: 1px solid Chocolate;
-
 }
 
 /* Navigation Section */
@@ -448,5 +453,79 @@ div {
   width: 970px;
   height: 70px;
   margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.top-navigation .links { /* make the links align to the right */
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li { /* make the links align horizontally */
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.top-navigation .links li:hover { /* to make the links have a pointer */
+  cursor: pointer;
+  color: #333333;
+}
+
+.top-navigation .links li.active { /* to make the links change color */
+  color: #4c5058;
+  font-weight: 500;
+}
+
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover; /* is a good trick to get the image to fill a screen size that's bigger than the image. */
+    height: 45.938rem;
+
+}
+
+.introduction h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.125rem;
+  font-weight: 300; /* this makes the type thinner or thicker */
+}
+
+.introduction h3 {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 300;
+}
+
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    width: 9.688rem;
+    background-color: #f15a29;
+    font-size: 1.125rem;
+    color: white;
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+
+button { /* to center the button in the page */
+  margin:0 auto;
+  display: block;
+}
+
+button:hover { /* to change the button color when you place your cursor over */ 
+      background-color: #d9400e;
+      cursor: pointer;
 }
 
