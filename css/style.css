@@ -483,16 +483,13 @@ div {
   font-weight: 500;
 }
 
-section .introduction {
-  display: block;
-}
-
 .introduction {
     background-image: url('../images/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover; /* is a good trick to get the image to fill a screen size that's bigger than the image. */
     height: 45.938rem;
+    padding: 15rem; /* Specify padding to move the hidden "introduction" image below the navigation bar */
 }
 
 .introduction h1 {
