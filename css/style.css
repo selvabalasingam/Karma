@@ -586,6 +586,7 @@ h5 {
   font-size: 0.9rem;
   margin-top: 0.15rem;
   font-weight: 300;
+  margin-left: 0.5rem
 }
 
 .footer-bottom {
@@ -595,6 +596,7 @@ h5 {
   font-size: 0.8rem;
   font-color: #838994;
   font-weight: 300;
+  margin-left: 0.5rem;
 }
 
 .social hr { /* Styling for the line above "Join us on..." */
@@ -611,7 +613,14 @@ h5 {
   margin: 1.25rem 5px;
   border: 1px solid #eaebec;
   padding: 0.625rem 0;
+
+}
+
+.icons {
   text-align: center;
+  margin-left: -1.9rem;
+  margin-top: -1.7rem;
+  margin-bottom: -1.1rem;
 }
 
 .social .icons > li:hover { /* to have have the arrow change into a pointer when you move your mouse over the icon */
