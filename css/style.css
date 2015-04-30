@@ -626,13 +626,13 @@ h5 {
 .social .icons > li:hover { /* to have have the arrow change into a pointer when you move your mouse over the icon */
   cursor: pointer;
 }
-.social .twitter { /* coloring each symbol */
+.fa-twitter { /* coloring each symbol */
   color: #55acee;
 }
-.social .facebook { /* coloring each symbol */
+.fa-facebook { 
   color: #4c66a4;
 }
-.social .instagram { /* coloring each symbol */
+.fa-instagram { 
   color: #3f729b;
 }
 
