@@ -557,7 +557,7 @@ button:hover { /* to change the button color when you place your cursor over */
     float:left; /* aligns all the cases back-to-back on the same row */
 }
 .cases .devices h3 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.563rem;
     margin: 2.5rem 0px 1.875rem;
     text-align: center;
@@ -583,7 +583,7 @@ h5 {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0.15rem;
   font-weight: 300;
   margin-left: 0.5rem
@@ -593,10 +593,15 @@ h5 {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
-  font-color: #838994;
+  font-size: 0.9rem;
+  color: #838994;
   font-weight: 300;
+<<<<<<< HEAD
   margin-left: 1rem;
+=======
+  margin-left: 0.6rem;
+  margin-bottom: 10rem; /* For extra white space at the bottom of the webpage*/
+>>>>>>> master
 }
 
 .social hr { /* Styling for the line above "Join us on..." */
@@ -620,19 +625,35 @@ h5 {
   text-align: center;
   margin-left: -1.9rem;
   margin-top: -1.7rem;
-  margin-bottom: -1.1rem;
+  margin-bottom: -0.85rem;
 }
 
 .social .icons > li:hover { /* to have have the arrow change into a pointer when you move your mouse over the icon */
   cursor: pointer;
 }
+<<<<<<< HEAD
 .fa-twitter { /* coloring each symbol */
   color: #55acee;
 }
 .fa-facebook { 
   color: #4c66a4;
 }
+=======
+
+.fa-twitter { /* coloring each symbol */
+  color: #55acee;
+}
+
+.fa-facebook { 
+  color: #4c66a4;
+}
+
+>>>>>>> master
 .fa-instagram { 
   color: #3f729b;
+}
+
+.addClass {
+  background-color: #d9400e;
 }
 

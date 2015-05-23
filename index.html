@@ -6,8 +6,16 @@
 	<meta charset="UTF-8">
 	<!-- The title will appear in the tab-->
 	<title>Karma</title>
+<<<<<<< HEAD
 	<!-- You need to use Waypoints to have the navigation bar change color after it scrolls past a certain element-->
 	<script src="/path/to/noframework.waypoints.min.js"></script>
+=======
+	<!-- This is for "waypoints" it's basically javascript to make the navigation bar change color when it scrolls past a certain element -->
+	<script src="/path/to/noframework.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+	<script src="js/scripts.js"></script>
+>>>>>>> master
 	<!-- This is for a specific font-->
 	<link href="//fonts.googleapis.com/css?family=Roboto:400,500,300"> 
 	<!-- This is for footer icons <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -19,6 +27,7 @@
 <body>
 	<nav class="top-navigation">
 	<div class="content">
+	    $('.top-navigation').addClass('change color');
 		<img class="logo" src="images/karma-logo.svg" alt="karma" width="26px" style="height: 70px;">
 	<ul class="links">
     	<li class="active">Meet Karma</li>
