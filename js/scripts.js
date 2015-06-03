@@ -1,3 +1,8 @@
 $(document).ready(function(){
-	$('.top-navigation').addClass('change color');
+	$('#nav-scroll').addClass('change color');
+	var waypoint = new Waypoint({
+	  element: document.getElementById('nav-scroll'),
+	  handler: function(direction) {},
+	  offset: 500
+	})
 }
