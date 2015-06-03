@@ -644,3 +644,8 @@ h5 {
   background-color: #d9400e;
 }
 
+#nav-scroll {
+  background-color: blue;
+  opacity: 0.5;
+}
+
