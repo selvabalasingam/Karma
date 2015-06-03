@@ -5,4 +5,8 @@ $(document).ready(function(){
 	  handler: function(direction) {},
 	  offset: 500
 	})
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
