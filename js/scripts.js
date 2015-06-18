@@ -1,8 +1,10 @@
 $(document).ready(function(){
-	$('#nav-scroll').addClass('change color');
-	var waypoint = new Waypoint({
-	  element: document.getElementById('nav-scroll'),
-	  handler: function(direction) {},
-	  offset: 500
-	})
-}
+$('top-navigation').waypoint(function(direction) {
+  if (direction === 'down') {
+    $('#nav-scroll').addClass('red');
+  }
+  else {
+    $('#nav-scroll').removeClass('red');
+  }
+});
+});
