@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var color = '#FFFF99';
 var waypoint = new Waypoint({
   element: document.querySelector('.introduction'),
@@ -24,4 +25,15 @@ var imageWaypoint = new Waypoint({
     }
   },
   offset: 'bottom-in-view'
+=======
+$(document).ready(function(){
+$('top-navigation').waypoint(function(direction) {
+  if (direction === 'down') {
+    $('#nav-scroll').addClass('red');
+  }
+  else {
+    $('#nav-scroll').removeClass('red');
+  }
+});
+>>>>>>> 24b4bfc5c73197930cb20782c8639edceadc74f9
 });
